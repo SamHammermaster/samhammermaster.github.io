@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root{                          //works like a global constant
+    --light-gray: #c0c0c0   
+}
+
+body{
+    background: #F2F2F2;
+    margin: 0;
+    font-family: 'Poppins';
+}
+.navbar{
+    background: #67ADEB;
+    padding: 1em;
+    
+    .name{
+        text-decoration: none;
+        margin-left: 1.5em;
+        margin-top: .5em;
+        font-size: 1.25em;
+        font-weight: bold;
+
+        color: white;
+        span{
+            color: var(--light-gray);
+        }
+    }
+    .container{
+        display: inline-flex;
+        place-content: space-between;
+        
+    }
+    .primary-nav{
+        list-style-type: none;
+        display: flex;
+        li{
+            margin: 0 1em 0 1em;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+            &:hover{
+                font-weight: bold;
+                color: #F2F2F2;
+            }
+        }
+    }
+}
+.hero{
+    padding: 5em 2em;
+    text-align: center;
+    .container{
+        display: inline;
+        padding-left: 10em;
+        padding-right: 10em;
+    }
+}
+.left-col{
+    display:inline-block;
+    position: static;
+    width: 28em;
+    text-align: center;
+    
+    .quote{
+        text-transform: uppercase;
+        font-weight: bold;
+        color: gray;
+        letter-spacing: .3em;
+        border-bottom: 5px dotted;
+        padding-bottom: 1em;
+        font-size: 2.3em;
+
+    }
+    .date{
+        background:  #67ADEB;
+        margin: 0 5em 0 5em;
+        border-radius: 3em;
+        color: white;   
+    }
+}
+.sam{
+    display: inline-block;
+     max-width: 500px;
+
+     border-radius: 20%;
+        
+}
+
+.about-me{
+    .container{
+        background: var(--light-gray);
+        padding-bottom: 40px;
+        .header{
+            color: #035196;
+            text-align: center;
+            font-size: 2.7em;
+            padding: 1em;
+        }
+        .hobbies{
+            margin-bottom: 0px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 3em;
+            display: block;
+            list-style-type: none;
+            font-size: 1.5em;
+            border: 5px #035196 dashed;
+            border-radius: 3.5em;
+            width: 50%;
+            
+            span{
+                font-weight: bold;
+                
+            }
+            li{
+                padding: .5em;
+                
+            }
+        }
+    }
+}
+.pictures{
+    background: #67ADEB;
+    margin: 0;
+    .container{
+        .title{
+            color: white;
+            text-align: center;
+            font-size: 2em;
+            padding: 1em;
+        }
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 1em;
+    }
+    img{
+        width: 400px;
+        border-radius: 20%;
+        border: 5px solid white; 
+    }
+}
+.nav2{
+    background: #F2F2F2;
+    margin: 2em 0 2em 0;
+    .container2{
+        display: block;
+        place-content: space-between;
+        text-align: center;   
+    }
+    a{
+        background:  #67ADEB;
+        margin: 0 5em 0 5em;
+        border-radius: 3em;
+        color: white; 
+        font-weight: bold;
+        width: 200px;
+        text-align: center;
+        margin: auto auto;
+        padding: 1em;
+        text-decoration: none;
+        
+        &:hover{
+            color: var(--light-gray);
+            cursor: pointer;
+        }
+    }
+}
+@media only screen and (max-width: 1358px){
+    .sam{
+        display: block;
+         margin-top: 2em;
+         margin-left: auto;
+         margin-right: auto;
+            
+    }
+    .left-col{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        .quote{
+            font-size: 2em;
+        }
+    }
+    .navbar{
+        font-size: 15px;
+    }
+}
